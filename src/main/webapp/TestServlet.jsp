@@ -19,6 +19,7 @@
        autofocus/>
 <script>
     var ws = new WebSocket("ws://tserv-282520.appspot.com:8084/ws");
+    WebSocket.timeout=150000;
     ws.onmessage = function (event) {
         console.log(event.data);
         document.getElementById("log").value += "[" + timestamp() + "] " + event.data + "\n";
