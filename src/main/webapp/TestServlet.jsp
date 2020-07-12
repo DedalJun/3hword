@@ -18,7 +18,7 @@
 <input title="Chat Input" id="input" type="text" style="display: block; width: 100%; border-width: 1px 0 1px 0;"
        autofocus/>
 <script>
-    var ws = new WebSocket("ws://tserv-282520.appspot.com:8084/test/ws");
+    var ws = new WebSocket("ws://tserv-282520.appspot.com/test:8084/ws");
     ws.onopen = function(event){
         ws.timeout = 30000;
     }
